@@ -1,9 +1,14 @@
+/* Carga Tailwind CSS para los recursos frontend del proyecto. */
 @import 'tailwindcss';
 
+/* Permite que Tailwind detecte clases usadas por las vistas de paginación. */
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+/* Permite detectar clases presentes en vistas Blade compiladas. */
 @source '../../storage/framework/views/*.php';
 
+/* Define los valores de diseño personalizados de la aplicación. */
 @theme {
+    /* Usa Instrument Sans como fuente principal del frontend. */
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
 }
